@@ -11,6 +11,8 @@ int main()
     double num= 0, maxNum = 0, average, total= 0, minNum= 100;
     int count = 0;
     string input, type, exception;
+    
+    cout << "Enter a line of input\n";
     getline(cin, input);
     for(int i = 0; i < input.length(); i++)
     {
