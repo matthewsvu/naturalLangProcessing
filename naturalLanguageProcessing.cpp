@@ -13,7 +13,7 @@ int main()
     
     string input, type, exception;
     
-    cout << "Enter a line of input\n";
+    cout << "Enter a line of input:\n";
     getline(cin, input);
     while(true)
     {
@@ -92,7 +92,7 @@ int main()
         count = 0;
         exception = "";
         
-        cout << "Enter a line of input\n";
+        cout << "Enter a line of input:\n";
         getline(cin, input);
     }
 }
