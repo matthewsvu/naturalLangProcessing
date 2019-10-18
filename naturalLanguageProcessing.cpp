@@ -10,13 +10,13 @@ int main()
 {
     double num= 0, maxNum = 0, average, total= 0, minNum= 100;
     int count = 0;
+    
     string input, type, exception;
     
     cout << "Enter a line of input\n";
     getline(cin, input);
-    for(int i = 0; i < input.length(); i++)
+    while(true)
     {
-
         istringstream sinput(input);
         while(sinput >> input)
         {
@@ -83,7 +83,6 @@ int main()
         else
         {
             cout << exception << " - I am not yet that smart to answer this one!" << endl;
-
         }
         average = 0;
         total = 0;
@@ -92,7 +91,8 @@ int main()
         type = "";
         count = 0;
         exception = "";
+        
+        cout << "Enter a line of input\n";
         getline(cin, input);
-
     }
 }
